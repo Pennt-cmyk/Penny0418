@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林珮芹 Penny</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Quicksand', 'Noto Sans TC', sans-serif; 
+            background-color: #fdfbf7; 
+            color: #4a4a4a;
+        }
+        .soft-shadow { box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05); }
+        .accent-gradient { background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); }
+        .nav-link:hover { color: #f87171; transition: 0.3s; }
+        .section-title { position: relative; display: inline-block; font-weight: 900; }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 8px;
+            bottom: 5px;
+            left: 0;
+            background: #fee2e2;
+            z-index: -1;
+            border-radius: 4px;
+        }
+        .bento-box { background: white; border-radius: 2rem; border: 1px solid #fff5f5; padding: 2rem; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-orange-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-2xl font-black tracking-tighter text-orange-400">PENNY LIN<span class="text-red-300">.</span></span>
+            <div class="hidden md:flex space-x-8 text-xs font-black uppercase tracking-widest text-gray-400">
+                <a href="#about" class="nav-link">個人簡介</a>
+                <a href="#test" class="nav-link">測驗分析</a>
+                <a href="#planning" class="nav-link">未來規劃</a>
+                <a href="#sa-goal" class="nav-link">目標職位</a>
+                <a href="#autobiography" class="nav-link">自傳履歷</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6">
+
+        <section id="about" class="pt-40 pb-20" data-aos="fade-up">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 relative">
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-orange-100 rounded-full z-0 opacity-40"></div>
+                    <img src="me.jpg" alt="Penny" class="relative z-10 rounded-[2.5rem] w-full aspect-square object-cover soft-shadow border-8 border-white" onerror="this.src='https://via.placeholder.com/400?text=Penny';">
+                </div>
+                <div class="md:col-span-7">
+                    <h2 class="section-title text-4xl mb-8">Hi, I'm Pei-Chin.</h2>
+                    <p class="text-xl leading-relaxed text-gray-500 mb-8 font-medium">
+                        我是林珮芹，目前就讀於資訊管理學系。我是一個在科技與生活之間尋找平衡的人。我具備 Java 與 Python 的開發基礎，並能運用 Power BI 進行數據視覺化與報表呈現在課餘時間，我喜歡玩遊戲、追劇或看小說，這些愛好讓我保持對新事物的創意與邏輯思考。
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-400">
+                        <div class="flex items-center"><i class="fa-solid fa-location-dot mr-3 text-red-300"></i>Taichung, Taiwan</div>
+                        <div class="flex items-center"><i class="fa-solid fa-star mr-3 text-red-300"></i>高中曾擔任副班長 (Leadership)</div>
+                        <div class="col-span-2 flex items-center"><i class="fa-solid fa-envelope mr-3 text-red-300"></i>Penny0935555784@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="test" class="py-20" data-aos="fade-up">
+            <h2 class="section-title text-3xl mb-12">職涯測驗結果分析：SI</h2>
+            <div class="bento-box soft-shadow grid md:grid-cols-2 gap-12 items-center text-left">
+                <div>
+                    <h3 class="text-4xl font-black mb-6 text-gray-800">社會型 <span class="text-orange-200">×</span> 研究型</h3>
+                    <div class="space-y-6">
+                        <div class="p-5 bg-red-50/50 rounded-2xl border-l-4 border-red-200">
+                            <h4 class="font-bold text-red-400 mb-1">S 社會型 (Social)</h4>
+                            <p class="text-sm text-gray-500">擁有高度同理心，擅長傾聽、溝通與團隊合作。在 SA/PM 領域能精準與使用者溝通需求。</p>
+                        </div>
+                        <div class="p-5 bg-orange-50/50 rounded-2xl border-l-4 border-orange-200">
+                            <h4 class="font-bold text-orange-400 mb-1">I 研究型 (Investigative)</h4>
+                            <p class="text-sm text-gray-500">喜歡觀察、探究原因並解決複雜問題。能將業務需求轉化為嚴謹系統規格。</p>
+                        </div>
+                    </div>
+                    <p class="mt-8 text-sm font-bold text-gray-500 bg-orange-50 inline-block px-4 py-1 rounded">
+                        特質總結：具備「以人為本」的溝通溫度，同時擁有「理性分析」的技術腦。
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img src="holland_code.png" class="max-h-72 mx-auto" onerror="this.style.display='none';">
+                    <div class="mt-4 px-6 py-2 bg-red-50 text-red-400 rounded-full font-bold text-xs inline-block italic">
+                        MATCHING RATE: TOP 4%
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planning" class="py-20" data-aos="fade-up">
+            <h2 class="section-title text-3xl mb-12">未來規劃：進修藍圖</h2>
+            <p class="mb-10 text-gray-500 font-bold">為了成為一名專業的系統分析師，我規劃了以下進修藍圖：</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bento-box soft-shadow border-t-4 border-red-300">
+                    <div class="text-red-400 text-3xl mb-4"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h4 class="font-bold text-lg mb-4">專業修課與工具精進</h4>
+                    <ul class="text-sm text-gray-500 space-y-4 text-left">
+                        <li><strong>SA&D 深究：</strong> 專研 UML 建模工具（如 EA 或 Visual Paradigm），繪製工業級系統設計圖。</li>
+                        <li><strong>資料庫優化：</strong> 學習資料庫正規化與索引優化，提升巨量資料處理效能。</li>
+                        <li><strong>UI/UX 理論：</strong> 修習介面設計與使用者經驗課程，提升系統 Wireframe 的易用性。</li>
+                    </ul>
+                </div>
+                <div class="bento-box soft-shadow border-t-4 border-orange-300">
+                    <div class="text-orange-400 text-3xl mb-4"><i class="fa-solid fa-globe"></i></div>
+                    <h4 class="font-bold text-lg mb-4">外部研習與實務接軌</h4>
+                    <ul class="text-sm text-gray-500 space-y-4 text-left">
+                        <li><strong>IIBA 商業分析：</strong> 學習 BABOK 知識體系。學習更高層次的需求工程標準方法論。</li>
+                        <li><strong>微服務架構講座：</strong> 了解模組化趨勢，應對高併發與高擴充性的系統設計需求。</li>
+                    </ul>
+                </div>
+                <div class="bento-box soft-shadow border-t-4 border-red-200">
+                    <div class="text-red-300 text-3xl mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="font-bold text-lg mb-4">技術深造 (強化溝通力)</h4>
+                    <ul class="text-sm text-gray-500 space-y-4 text-left">
+                        <li><strong>API 設計規範：</strong> 研究 RESTful API 與 Swagger，定義清晰的系統整合接點。</li>
+                        <li><strong>資安設計思維：</strong> 學習將 Security by Design 植入規格書，包含權限控管與加密。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sa-goal" class="py-20" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl mb-4">目標職位：系統分析師 (SA)</h2>
+                <p class="text-gray-400 font-bold uppercase tracking-widest text-sm">Target Role & Tasks</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bento-box soft-shadow p-6 text-center hover:bg-orange-50 transition">
+                    <i class="fa-solid fa-comments text-orange-300 text-2xl mb-4"></i>
+                    <h5 class="font-bold text-sm mb-2">需求訪談</h5>
+                    <p class="text-[10px] text-gray-400 leading-tight">擔任翻譯官，轉化業務術語為技術規格。</p>
+                </div>
+                <div class="bento-box soft-shadow p-6 text-center hover:bg-red-50 transition">
+                    <i class="fa-solid fa-sitemap text-red-300 text-2xl mb-4"></i>
+                    <h5 class="font-bold text-sm mb-2">架構設計</h5>
+                    <p class="text-[10px] text-gray-400 leading-tight">規劃資料庫結構 (ER Model) 與流程圖。</p>
+                </div>
+                <div class="bento-box soft-shadow p-6 text-center hover:bg-orange-50 transition">
+                    <i class="fa-solid fa-clock-rotate-left text-orange-300 text-2xl mb-4"></i>
+                    <h5 class="font-bold text-sm mb-2">專案控管</h5>
+                    <p class="text-[10px] text-gray-400 leading-tight">監控開發進度，確保專案如期在範疇內交付。</p>
+                </div>
+                <div class="bento-box soft-shadow p-6 text-center hover:bg-red-50 transition">
+                    <i class="fa-solid fa-clipboard-check text-red-300 text-2xl mb-4"></i>
+                    <h5 class="font-bold text-sm mb-2">品質保證</h5>
+                    <p class="text-[10px] text-gray-400 leading-tight">設計測試案例，確保系統安全與穩定。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="autobiography" class="py-20 mb-20" data-aos="fade-up">
+            <h2 class="section-title text-3xl mb-12">專業履歷自傳</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1 space-y-6">
+                    <div class="bento-box soft-shadow">
+                        <h4 class="font-black text-xs text-gray-300 uppercase tracking-widest mb-6">能力</h4>
+                        <ul class="space-y-4 text-sm font-bold text-gray-600">
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i> 系統分析與設計</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Java, Python Flask</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Power BI 視覺化</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i> 關係型資料庫設計</li>
+                        </ul>
+                    </div>
+                    <div class="bento-box soft-shadow bg-orange-100/30">
+                        <h4 class="font-black text-xs text-orange-400 uppercase tracking-widest mb-4">核心課程</h4>
+                        <p class="text-xs text-orange-400 font-bold">
+                            資料結構 / 資料庫管理系統 / ERP 企業資源規劃 / SAP 實務
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 accent-gradient rounded-[3rem] p-10 md:p-14 text-white shadow-xl">
+                    <div class="space-y-10">
+                        <div>
+                            <h4 class="text-2xl font-black mb-4 italic">Why I am a Great Fit</h4>
+                            <ul class="space-y-6 opacity-95 text-sm leading-loose">
+                                <li><strong>具備技術深度的溝通者：</strong> S 屬性讓我耐心訪談，確保開發不偏離初衷；資管背景確保技術規格嚴謹。</li>
+                                <li><strong>跨領域專案經驗：</strong> 在 SDGs 與 IoT 專案中，我擅長時程控管，精確掌握專案範疇。</li>
+                                <li><strong>持續進修與適應力：</strong> 展現強大的自主學習能力，適應快速變動的開發環境。</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-white/20">
+                            <h4 class="text-2xl font-black mb-4 italic">未來展望</h4>
+                            <p class="opacity-95 text-sm leading-loose">
+                                我將以「確保服務等級目標 (SLA)」為己任，協助公司打造安全、穩定且符合市場需求的數位產品。
+                            </p>
+                            <div class="mt-10">
+                                <a href="mailto:Penny0935555784@gmail.com" class="inline-block bg-white text-orange-400 px-10 py-3 rounded-full font-black hover:shadow-2xl transition">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-white border-t border-orange-50 text-center">
+        <p class="text-xs font-black text-gray-200 tracking-[0.5em] uppercase italic">Penny Lin &copy; 2026 / System Analyst Portfolio</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
